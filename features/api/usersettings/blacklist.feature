@@ -19,10 +19,10 @@ Feature: Individual Blacklist
     When you create your user settings via POST request to "/usersettings" with:
     """
     {
-      "blacklist": ["12345"]
+      "blacklist": ["5b5863e8d47c14323165718b"]
     }
     """
-    Then you will stop seeing posts of the user with id "12345"
+    Then you will stop seeing posts of the user with id "5b5863e8d47c14323165718b"
 
   Scenario: Filter out contributions of a blacklisted user
     Given you blacklisted the user "Troll" before
