@@ -23,6 +23,7 @@ module.exports = function (app) {
     coverImg: { type: String },
     doiToken: { type: String },
     confirmedAt: { type: Date },
+    rooms: { type: Array, default: [] },
     badgeIds: [],
     deletedAt: { type: Date },
     createdAt: { type: Date, default: Date.now },

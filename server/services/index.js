@@ -23,6 +23,8 @@ const pages = require('./pages/pages.service.js');
 const systemNotifications = require('./system-notifications/system-notifications.service.js');
 const settings = require('./settings/settings.service.js');
 const userInvites = require('./user-invites/user-invites.service.js');
+const messages = require('./messages/messages.service.js');
+const chatrooms = require('./chatrooms/chatrooms.service.js');
 
 module.exports = function () {
   const app = this; // eslint-disable-line no-unused-vars
@@ -51,4 +53,6 @@ module.exports = function () {
   app.configure(systemNotifications);
   app.configure(settings);
   app.configure(userInvites);
+  app.configure(messages);
+  app.configure(chatrooms);
 };
