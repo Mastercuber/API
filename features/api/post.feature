@@ -5,7 +5,7 @@ Feature: Publish a post to Human Connection
 
 
   Background:
-    Given there is a user in Human Connection with these credentials:
+    Given this is your user account:
       | email            | password |
       | user@example.com |     1234 |
 
